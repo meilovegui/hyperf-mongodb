@@ -34,7 +34,7 @@ phpize
 
 #### 1、拉取包
 ```bash
-composer require zrone/hyperf-mongodb
+composer require meilovegui/hyperf-mongodb
 ```
 #### 2、发布配置
 ```

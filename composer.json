@@ -16,14 +16,14 @@
   },
   "autoload": {
     "psr-4": {
-      "Zrone\\MongoDb\\": "src/"
+      "meilovegui\\MongoDb\\": "src/"
     },
     "files": [
     ]
   },
   "extra": {
     "hyperf": {
-      "config": "Zrone\\MongoDb\\ConfigProvider"
+      "config": "meilovegui\\MongoDb\\ConfigProvider"
     }
   }
 }

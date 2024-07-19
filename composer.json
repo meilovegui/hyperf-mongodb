@@ -6,6 +6,7 @@
       "name": "zrone",
       "email": "xujining2008@126.com"
     }
+
   ],
   "require": {
     "php": ">=7.4",
@@ -16,14 +17,14 @@
   },
   "autoload": {
     "psr-4": {
-      "meilovegui\\MongoDb\\": "src/"
+      "Meilovegui\\MongoDb\\": "src/"
     },
     "files": [
     ]
   },
   "extra": {
     "hyperf": {
-      "config": "meilovegui\\MongoDb\\ConfigProvider"
+      "config": "Meilovegui\\MongoDb\\ConfigProvider"
     }
   }
 }

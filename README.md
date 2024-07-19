@@ -1,12 +1,39 @@
+### **特别注明：本扩展开发并非本人、只是修改后配合本人hyperf3.0以上项目使用**
+
+
+
+以下是原来说明：略作修改
+
+使用此扩展首先 服务器PHP扩展必须 1.18以上 https://pecl.php.net/package/mongodb
+
+安装方法如下：
+
+```bash
+wget https://pecl.php.net/get/mongodb-1.18.0.tgz
+tar -zxvf mongodb-1.18.0.tgz 
+cd mongodb-1.18.0
+phpize
+./configure --with-php-config=/www/server/php/80/bin/php-config #PHP-config 的路径
+ make
+ make install 
+ 
+```
+
+
+
 ### 默认使用mongodb提供的库来封装,官方git地址：https://github.com/mongodb/mongo-php-library
+
 #### 1、支持类似mysql orm的一些操作
 #### 2、支持迁移文件
-#### 3、只支持hyperf框架，由于swoole协程不支持mongodb，所以所有的方法都采用task进程来实现，该包已经封装好所有的方法都会投递到task进程进行操作，task进程建议开启多一点
+#### 3、只支持hyperf框架，由于swoole协程不fd支持mongodb，所以所有的方法都采用task进程来实现，该包已经封装好所有的方法都会投递到task进程进行操作，task进程建议开启多一点
 #### 4、该包默认使用了连接池
 
 ### 使用
+
+
+
 #### 1、拉取包
-```
+```bash
 composer require zrone/hyperf-mongodb
 ```
 #### 2、发布配置
@@ -14,7 +41,7 @@ composer require zrone/hyperf-mongodb
 php bin/hyperf.php mongodb:publish --config
 ```
 #### 3、配置介绍
-```
+```php
 <?php
 declare(strict_types=1);
 return [
@@ -51,7 +78,7 @@ php bin/hyperf.php mongodb:migration Test
 ```
 上面的命令会自动生成一个迁移文件，会生成一个文件到配置文件指定的迁移目录中
 #### 5、迁移文件例子
-```
+```php
 <?php
 declare(strict_types=1);
 namespace Zrone\MongoDb\Example\Migrations;
@@ -97,7 +124,7 @@ php bin/hyperf.php mongodb:migrate
 2、在你的项目里面新建一个目录，该目录叫mongo(自行命名，类似orm的model)  
 3、比如我现在项目里面有一个库，叫test，test里面有两个collection，名字为co1,co2(你把它当成mysql的表一样)   
 4、我在mongo目录新建两个文件，叫Co1Mongo和Co2Mongo，都继承\Zrone\MongoDb\MongoDb   
-```
+```php
 <?php
 declare(strict_types=1);
 namespace TmgAddons\WebQySession\Admin\Mongo;
@@ -113,7 +140,7 @@ class TestMongo extends MongoDb
 }
 ```
 5、查询co1中的一条数据
-```
+```php
 <?php
 declare(strict_types=1);
 namespace TmgAddons\WebQySession\Admin\Controller;

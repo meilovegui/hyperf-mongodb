@@ -30,7 +30,7 @@ abstract class BaseCommand extends Command
     /**
      * @var string
      */
-    protected $poolName = 'default';
+    protected ?string $poolName = 'default';
 
     /**
      * @var array
@@ -42,7 +42,7 @@ abstract class BaseCommand extends Command
      *
      * @var OutputInterface
      */
-    protected $output;
+    protected ?OutputInterface $output;
 
     /**
      * The filesystem instance.

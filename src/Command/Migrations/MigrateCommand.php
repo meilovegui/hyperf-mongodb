@@ -24,14 +24,14 @@ class MigrateCommand extends BaseCommand
 {
     use ConfirmableTrait;
 
-    protected $name = 'mongodb:migrate';
+    protected ?string $name = 'mongodb:migrate';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Run the mongodb migrate';
+    protected string $description = 'Run the mongodb migrate';
 
     /**
      * Execute the console command.

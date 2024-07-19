@@ -27,14 +27,14 @@ class MigrationCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'mongodb:migration';
+    protected ?string $name = 'mongodb:migration';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Generate a new migration file';
+    protected string $description = 'Generate a new migration file';
 
     /**
      * The migration creator instance.

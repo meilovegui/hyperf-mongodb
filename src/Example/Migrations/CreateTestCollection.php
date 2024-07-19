@@ -7,7 +7,7 @@ namespace Meilovegui\MongoDb\Example\Migrations;
  * Date: 2019-12-23
  * Time: 13:21
  */
-use Zrone\MongoDb\MongoDbMigration;
+use Meilovegui\MongoDb\MongoDbMigration;
 class CreateTestCollection extends MongoDbMigration
 {
     /**

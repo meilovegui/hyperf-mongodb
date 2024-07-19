@@ -33,12 +33,12 @@ phpize
 
 
 #### 1、拉取包
-```bash
+```ini
 composer require meilovegui/hyperf-mongodb
 ```
 #### 2、发布配置
-```
-php bin/hyperf.php mongodb:publish --config
+```ini
+php bin/hyperf.php vendor:publish meilovegui/hyperf-mongodb
 ```
 #### 3、配置介绍
 ```php

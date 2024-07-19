@@ -17,7 +17,7 @@ class ConfigCommand extends HyperfCommand
      *
      * @var string
      */
-    protected $name = 'mongodb:publish';
+    protected ?string $name = 'mongodb:publish';
 
     public function handle()
     {

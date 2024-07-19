@@ -8,7 +8,7 @@ use MongoDB\Client;
 use MongoDB\Collection;
 use MongoDB\Database;
 use MongoDB\Operation\Explainable;
-use Zrone\MongoDb\Exception\MongoDBException;
+use Meilovegui\MongoDb\Exception\MongoDBException;
 use Hyperf\Pool\Connection;
 use Hyperf\Pool\Exception\ConnectionException;
 use Hyperf\Pool\Pool;
@@ -19,7 +19,7 @@ use MongoDB\Driver\Exception\Exception;
 use MongoDB\Driver\Exception\InvalidArgumentException;
 use MongoDB\Driver\Exception\RuntimeException;
 use MongoDB\Driver\Manager;
-use Zrone\MongoDb\Utils\Arr;
+use Meilovegui\MongoDb\Utils\Arr;
 use Psr\Container\ContainerInterface;
 
 class MongoDbConnection extends Connection implements ConnectionInterface

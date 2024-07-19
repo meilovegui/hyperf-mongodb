@@ -4,7 +4,7 @@ namespace Meilovegui\MongoDb\Pool;
 
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\ConnectionInterface;
-use Zrone\MongoDb\MongoDbConnection;
+use Meilovegui\MongoDb\MongoDbConnection;
 use Hyperf\Pool\Pool;
 use Hyperf\Utils\Arr;
 use Psr\Container\ContainerInterface;
@@ -46,7 +46,7 @@ class MongoDBPool extends Pool
 
     /**
      * @return ConnectionInterface
-     * @throws \Zrone\Mongodb\Exception\MongoDBException
+     * @throws \Meilovegui\MongoDb\Exception\MongoDBException
      */
     protected function createConnection(): ConnectionInterface
     {

@@ -40,7 +40,7 @@ class MigrationCommand extends BaseCommand
      * The migration creator instance.
      *
      * @Inject()
-     * @var \Zrone\MongoDb\Command\Migrations\MigrationCreator
+     * @var \Meilovegui\MongoDb\Command\Migrations\MigrationCreator
      */
     protected $creator;
 

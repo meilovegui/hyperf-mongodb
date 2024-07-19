@@ -12,7 +12,7 @@ class CreateTestCollection extends MongoDbMigration
 {
     /**
      * 支持很多方法，请详细去看MongoDbMigration这个类
-     * @throws \Zrone\MongoDb\Exception\MongoDBException
+     * @throws \Meilovegui\MongoDb\Exception\MongoDBException
      */
     public function up()
     {
@@ -31,7 +31,7 @@ class CreateTestCollection extends MongoDbMigration
 
     /**
      * 迁移失败时会执行
-     * @throws \Zrone\MongoDb\Exception\MongoDBException
+     * @throws \Meilovegui\MongoDb\Exception\MongoDBException
      */
     public function down()
     {

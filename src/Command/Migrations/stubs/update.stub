@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
-use Zrone\MongoDb\MongoDbMigration;
+use Meilovegui\MongoDb\MongoDbMigration;
 
 class DummyClass extends MongoDbMigration
 {
     /**
-     * @throws \Zrone\MongoDb\Exception\MongoDBException
+     * @throws \Meilovegui\MongoDb\Exception\MongoDBException
      */
     public function up()
     {
@@ -13,7 +13,7 @@ class DummyClass extends MongoDbMigration
     }
 
     /**
-     * @throws \Zrone\MongoDb\Exception\MongoDBException
+     * @throws \Meilovegui\MongoDb\Exception\MongoDBException
      */
     public function down()
     {

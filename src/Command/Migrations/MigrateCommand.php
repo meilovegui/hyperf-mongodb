@@ -15,7 +15,7 @@ namespace Meilovegui\MongoDb\Command\Migrations;
 use Hyperf\Command\Annotation\Command;
 use Hyperf\Command\ConfirmableTrait;
 use Hyperf\Di\Annotation\Inject;
-use Zrone\MongoDb\MongoDbConnection;
+use Meilovegui\MongoDb\MongoDbConnection;
 use Symfony\Component\Console\Input\InputOption;
 /**
  * @Command()

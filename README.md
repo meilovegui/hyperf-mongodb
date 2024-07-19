@@ -82,12 +82,12 @@ php bin/hyperf.php mongodb:migration Test
 <?php
 declare(strict_types=1);
 namespace Meilovegui\MongoDb\Example\Migrations;
-use Zrone\MongoDb\MongoDbMigration;
+use Meilovegui\MongoDb\MongoDbMigration;
 class CreateTestCollection extends MongoDbMigration
 {
     /**
      * 支持很多方法，请详细去看MongoDbMigration这个类
-     * @throws \Zrone\MongoDb\Exception\MongoDBException
+     * @throws \Meilovegui\MongoDb\Exception\MongoDBException
      */
     public function up()
     {
@@ -106,7 +106,7 @@ class CreateTestCollection extends MongoDbMigration
 
     /**
      * 迁移失败时会执行
-     * @throws \Zrone\MongoDb\Exception\MongoDBException
+     * @throws \Meilovegui\MongoDb\Exception\MongoDBException
      */
     public function down()
     {
@@ -123,13 +123,13 @@ php bin/hyperf.php mongodb:migrate
 1、上面能像orm一样能进行迁移了，解决了升级的问题，下面我们来说一下开发时候怎么使用   
 2、在你的项目里面新建一个目录，该目录叫mongo(自行命名，类似orm的model)  
 3、比如我现在项目里面有一个库，叫test，test里面有两个collection，名字为co1,co2(你把它当成mysql的表一样)   
-4、我在mongo目录新建两个文件，叫Co1Mongo和Co2Mongo，都继承\Zrone\MongoDb\MongoDb   
+4、我在mongo目录新建两个文件，叫Co1Mongo和Co2Mongo，都继承\Meilovegui\MongoDb\MongoDb   
 ```php
 <?php
 declare(strict_types=1);
 namespace TmgAddons\WebQySession\Admin\Mongo;
 
-use Zrone\MongoDb\MongoDb;
+use Meilovegui\MongoDb\MongoDb;
 class TestMongo extends MongoDb
 {
     /**
@@ -166,7 +166,7 @@ class TestController
     /**
      * @GetMapping(path="")
      * @return array
-     * @throws \Zrone\MongoDb\Exception\MongoDBException
+     * @throws \Meilovegui\MongoDb\Exception\MongoDBException
      */
     public function test()
     {
@@ -183,4 +183,4 @@ class TestController
 如果你使用的是mongodb默认生成_id,那么更新和删除我默认已经帮你使用MongoDB\BSON\ObjectId进行了转换，所以你无需再转换，你直接把_id对应的字符串传进去就好了，比如要根据_id获取某条数据，$filter=['_id' => 'xxxxxx']即可。获取数据时，我也默认帮你把_id转成了字符串
 
 #### 10、遇到问题
-1、因为我使用了hyperf框架，所以基本都是单例模式。我model里面使用\Zrone\MongoDb\MongoDb 的setCollectionName方法来切换表时，必须处理完逻辑后然后再切回原始的collectionName，否则你查询的会是你切换的表
+1、因为我使用了hyperf框架，所以基本都是单例模式。我model里面使用\Meilovegui\MongoDb\MongoDb 的setCollectionName方法来切换表时，必须处理完逻辑后然后再切回原始的collectionName，否则你查询的会是你切换的表

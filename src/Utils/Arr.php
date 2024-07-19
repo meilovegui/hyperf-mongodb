@@ -10,7 +10,7 @@ namespace Meilovegui\MongoDb\Utils;
  */
 
 use Closure;
-use Zrone\MongoDb\Utils\Contract\Arrayable;
+use Meilovegui\MongoDb\Utils\Contract\Arrayable;
 
 class Arr
 {

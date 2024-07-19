@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Zrone\MongoDb\Exception;
+namespace Meilovegui\MongoDb\Exception;
 
 use Throwable;
 

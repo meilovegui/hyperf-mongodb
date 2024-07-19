@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Zrone\MongoDb\Utils\Contract;
+namespace Meilovegui\MongoDb\Utils\Contract;
 /**
  * Interface Arrayable
  */

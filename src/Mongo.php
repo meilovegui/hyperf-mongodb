@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Zrone\MongoDb;
+namespace Meilovegui\MongoDb;
 
 use MongoDB\BSON\JavascriptInterface;
 use MongoDB\Operation\Explainable;

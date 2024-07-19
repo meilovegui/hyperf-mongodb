@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Zrone\MongoDb\Example\Migrations;
+namespace Meilovegui\MongoDb\Example\Migrations;
 /**
  * Created by PhpStorm.
  * User: liyuzhao

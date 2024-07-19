@@ -81,7 +81,7 @@ php bin/hyperf.php mongodb:migration Test
 ```php
 <?php
 declare(strict_types=1);
-namespace Zrone\MongoDb\Example\Migrations;
+namespace Meilovegui\MongoDb\Example\Migrations;
 use Zrone\MongoDb\MongoDbMigration;
 class CreateTestCollection extends MongoDbMigration
 {

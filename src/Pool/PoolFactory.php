@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Zrone\MongoDb\Pool;
+namespace Meilovegui\MongoDb\Pool;
 
 
 use Hyperf\Di\Container;
